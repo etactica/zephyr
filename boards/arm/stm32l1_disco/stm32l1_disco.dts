@@ -5,15 +5,16 @@
  */
 
 /dts-v1/;
-#include <st/l1/stm32l151Xb.dtsi>
+//#include <st/l1/stm32l151Xb.dtsi>
+#include <st/l1/stm32l151X8-a.dtsi>
 
 / {
 	model = "STMicroelectronics STM32L1DISCOVERY board";
 	compatible = "st,stm32l1discovery", "st,stm32l151";
 
 	chosen {
-		zephyr,console = &usart1;
-		zephyr,shell-uart = &usart1;
+		zephyr,console = &usart2;
+		zephyr,shell-uart = &usart2;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 	};
